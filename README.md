@@ -1,21 +1,15 @@
-# littledata:synced-cron
+# cybercyclone:synced-cron-ravendb
 
 A simple cron system for [Meteor](http://meteor.com). It supports syncronizing jobs between multiple processes. In other words, if you add a job that runs every hour and your deployment consists of multiple app servers, only one of the app servers will execute the job each time (whichever tries first).
 
-## Migrated from percolate:synced-cron littledata:synced-cron
+## Migrated from MongoDB
 
-Since the original creator of the project could no longer maintain it, we had to migrate the package to another organisation to allow further maintenance and updates.
-
-To migrate you can simply run
-
-``` sh
-$ meteor remove percolate:synced-cron && meteor add littledata:synced-cron
-```
+This is a adaption from the original plugin (percolate:synced-cron and littledata:synced-cron) to work with RavenDB instead of MongoDB. This is meant to be a drop-in replacement from littledata:synced-cron, therefore all issues relating to the functionality of the plugin need to be passed to the upstream plugin `littledata:synced-cron`. *We will only be accepted issues relating directly to our implementation of RavenDB.*
 
 ## Installation
 
 ``` sh
-$ meteor add littledata:synced-cron
+$ meteor add cybercyclone:synced-cron-ravendb
 ```
 
 ## API

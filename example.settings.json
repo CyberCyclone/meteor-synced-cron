@@ -1,0 +1,8 @@
+{
+  "private": {
+    "ravendb": {
+      "servers": ["https://example1.ravendb.community", "https://example2.ravendb.community", "https://example3.ravendb.community"],
+      "certificate_filename": "meteorjs-testnet.pfx"
+    }   
+  }
+}
